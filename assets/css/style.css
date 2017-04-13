@@ -40,15 +40,31 @@ a {
 	text-decoration: none;
 }
 
+footer {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 75%;
+	text-align: center;
+	background-color: #666666;
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	border-top-width: 4px;
 
+}
 
-#topWrapper {
+/* CSS for the "About Me" page under index.html */
+
+.aboutPage #topWrapper {
 	width: 960px;
 	margin: auto;
 }
 
-
-#myName {
+.aboutPage #myName {
 	float: left;	
 	text-align: center;
 	vertical-align: middle;
@@ -57,14 +73,14 @@ a {
 	background-color: #4aaaa5;
 }
 
-#topNav {
+ .aboutPage #topNav {
 	float: right;
 	color: #000000;
 	margin-top: 24px;
 	opacity: 0.5;
 }
 
-#wrapper {
+.aboutPage #wrapper {
 	clear:both;
 	overflow: auto;
 	margin: auto;
@@ -73,34 +89,91 @@ a {
 	margin-top: 30px;
 }
 
-#main {
+.aboutPage #main {
 	clear:both;
 	float: left;
 	background-color: #ffffff;
 	width: 650px;
-	padding: 20px;
-
+	padding: 25px;
+	overflow: auto;
 }
 
-#personalPhoto {
+.aboutPage #subject {
+	padding-bottom: 20px;
+	border-bottom-width: 3px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+}
+
+.aboutPage #personalPhoto {
 	float: left;
 	height: 230px;
 	width: 230px;
-	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-right: 20px;
+	margin-bottom: 10px;
 }
 
-#sidebar {
+.aboutPage #sidebar {
 	float: right;
 	background-color: #ffffff;
 	text-align: center;
-	padding: 15px;
+	padding: 25px;
 	width: 270px;
 }
 
-.iconImages {
-	height: 50px;
-	width: 50px;
+.aboutPage #connect {
+	border-bottom-width: 3px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.aboutPage .iconImages {
+	height: 65px;
+	width: 65px;
+}
+
+/* 
+-----------------------------------------------
+CSS for the "Portfolio" page under index.html 
+-----------------------------------------------
+*/
+
+* {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/concreteSeamless.png");
+	margin: 0;
+}
+
+header {
+	vertical-align: middle;
+	background-color: #ffffff;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	top: 0;
+	left: 0;
+	right: 0;
+
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
 }
 
 footer {
@@ -110,13 +183,329 @@ footer {
 	left: 0;
 	right: 0;
 	padding: 10px;
+	color: #ffffff;
+	font-size: 75%;
 	text-align: center;
 	background-color: #666666;
 	border-top-style: solid;
 	border-top-color: #4aaaa5;
 	border-top-width: 4px;
+	z-index: 2;
 
 }
+
+
+.portfolioPage #topWrapper {
+	width: 960px;
+	margin: auto;
+}
+
+.portfolioPage #myName {
+	float: left;	
+	text-align: center;
+	vertical-align: middle;
+	width: 260px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+}
+
+ .portfolioPage #topNav {
+	float: right;
+	color: #000000;
+	margin-top: 24px;
+	opacity: 0.5;
+}
+
+.portfolioPage #wrapper {
+	clear:both;
+	overflow: auto;
+	margin: auto;
+	width: 960px;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 120px;
+}
+
+.portfolioPage #main {
+	float: left;
+	background-color: #ffffff;
+	width: 650px;
+	padding: 25px;
+	position: relative;
+}
+
+.portfolioPage #subject {
+	padding-bottom: 20px;
+	border-bottom-width: 3px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+}
+
+.portfolioPage .portfolioImages {
+	height: 202px;
+	width: 275px;
+}
+
+.portfolioPage .portfolio1 {
+	clear: both;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.portfolioPage .portfolio2 {
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.portfolioPage .portfolio3 {
+	clear: both;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.portfolioPage .portfolio4 {
+	float: right;
+	margin-bottom: 50px;
+}
+
+.portfolioPage .portfolio5 {
+	clear: both;
+	float: left;
+}
+
+.portfolioPage #hangman {
+	clear: both;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 275px;
+	z-index: 2;
+	padding: 13px;
+	font-size: 130%;
+	top: 274px;
+}
+
+.portfolioPage #rpg {
+	clear: both;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 275px;
+	z-index: 1;
+	padding: 13px;
+	font-size: 130%;
+	top: 274px;
+	left: 350px;
+}
+
+.portfolioPage #trivia {
+	clear: both;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 275px;
+	z-index: 2;
+	padding: 13px;
+	font-size: 130%;
+	top: 530px;
+}
+
+.portfolioPage #widget {
+	clear: both;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 275px;
+	z-index: 2;
+	padding: 13px;
+	font-size: 130%;
+	top: 530px;
+	left: 350px;
+}
+
+.portfolioPage #rps {
+	clear: both;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	height: 50px;
+	width: 275px;
+	z-index: 2;
+	padding: 13px;
+	font-size: 130%;
+	top: 782px;
+}
+
+
+.portfolioPage #sidebar {
+	float: right;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 25px;
+	width: 270px;
+}
+
+.portfolioPage #connect {
+	border-bottom-width: 3px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.portfolioPage .iconImages {
+	height: 65px;
+	width: 65px;
+
+}
+
+
+/* 
+-----------------------------------------------
+CSS for the "Contact" page under index.html 
+-----------------------------------------------
+*/
+
+
+* {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/concreteSeamless.png");
+	margin: 0;
+}
+
+header {
+	vertical-align: middle;
+	background-color: #ffffff;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	top: 0;
+	left: 0;
+	right: 0;
+
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+footer {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 75%;
+	text-align: center;
+	background-color: #666666;
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	border-top-width: 4px;
+	z-index: 2;
+
+}
+
+.contactPage #topWrapper {
+	width: 960px;
+	margin: auto;
+}
+
+.contactPage #myName {
+	float: left;	
+	text-align: center;
+	vertical-align: middle;
+	width: 260px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+}
+
+ .contactPage #topNav {
+	float: right;
+	color: #000000;
+	margin-top: 24px;
+	opacity: 0.5;
+}
+
+.contactPage #wrapper {
+	clear:both;
+	overflow: auto;
+	margin: auto;
+	width: 960px;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 120px;
+}
+
+.contactPage #main {
+	float: left;
+	background-color: #ffffff;
+	width: 650px;
+	padding: 25px;
+	position: relative;
+}
+
+.contactPage #subject {
+	padding-bottom: 20px;
+	border-bottom-width: 3px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+}
+
+.contactPage #sidebar {
+	float: right;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 25px;
+	width: 270px;
+}
+
+.contactPage #connect {
+	border-bottom-width: 3px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.contactPage .iconImages {
+	height: 65px;
+	width: 65px;
+
+}
+
+
+
+
+
 
 
 
